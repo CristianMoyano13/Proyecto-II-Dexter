@@ -10,7 +10,11 @@ public class CharacterController2D : MonoBehaviour
 	[SerializeField] private LayerMask m_WhatIsGround;							// Layer que checkea que es piso para el zorrito
 	[SerializeField] private Transform m_GroundCheck;							// Posicion que checkea si esta en el piso
 	[SerializeField] private Transform m_CeilingCheck;							// Posicion que checkea con el techo
-	[SerializeField] private Collider2D m_CrouchDisableCollider;				// Para desactivar el collider al agacharse
+	[SerializeField] private Collider2D m_CrouchDisableCollider;                // Para desactivar el collider al agacharse
+
+	[SerializeField] private GameObject jumpSound;
+	[SerializeField] private AudioSource footStep;
+	[SerializeField] private AudioSource crouch;
 
 	const float k_GroundedRadius = .2f; // Radio del collider que checkea con el piso
 	private bool m_Grounded;            // Si esta o no en el piso
@@ -30,7 +34,11 @@ public class CharacterController2D : MonoBehaviour
 	public BoolEvent OnCrouchEvent;
 	private bool m_wasCrouching = false;
 
-	private void Awake()
+    private void Start()
+    {
+		
+	}
+    private void Awake()
 	{
 		m_Rigidbody2D = GetComponent<Rigidbody2D>();
 
@@ -59,7 +67,6 @@ public class CharacterController2D : MonoBehaviour
 		}
 	}
 
-
 	public void Move(float move, bool crouch, bool jump)
 	{
 		// Si esta agachado checkea si se puede parar
@@ -75,7 +82,6 @@ public class CharacterController2D : MonoBehaviour
 		// Solo se puede controlar al zorrito si esta en tierra o si airControl es verdadero
 		if (m_Grounded || m_AirControl)
 		{
-
 			if (crouch)
 			{
 				if (!m_wasCrouching)
@@ -83,14 +89,13 @@ public class CharacterController2D : MonoBehaviour
 					m_wasCrouching = true;
 					OnCrouchEvent.Invoke(true);
 				}
-
 				// Se reduce la velocidad al agacharse
 				move *= m_CrouchSpeed;
-
 				// Desactiva un collider al agacharse
 				if (m_CrouchDisableCollider != null)
 					m_CrouchDisableCollider.enabled = false;
-			} else
+			} 
+			else
 			{
 				// Activa un collider cuando no esta agachado
 				if (m_CrouchDisableCollider != null)
@@ -122,6 +127,7 @@ public class CharacterController2D : MonoBehaviour
 		{
 			m_Grounded = false;
 			m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+			Instantiate(jumpSound);
 		}
 	}
 
@@ -132,5 +138,16 @@ public class CharacterController2D : MonoBehaviour
 		Vector3 theScale = transform.localScale;
 		theScale.x *= -1;
 		transform.localScale = theScale;
+	}
+
+	// Evento de sonido para caminar linkedo a la animacion
+	private void FootStep()
+    {
+		footStep.Play();
+    }
+	// Evento de sonido para agacharse linkeado a la animacion
+	public void Crouch()
+	{
+		crouch.Play();
 	}
 }
