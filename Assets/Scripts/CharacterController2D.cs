@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UI;
 
 public class CharacterController2D : MonoBehaviour
 {
@@ -16,12 +17,16 @@ public class CharacterController2D : MonoBehaviour
 	[SerializeField] private AudioSource footStep;
 	[SerializeField] private AudioSource crouch;
 
+	[SerializeField] private Text collectablesText;
+
+
 	const float k_GroundedRadius = .2f; // Radio del collider que checkea con el piso
 	private bool m_Grounded;            // Si esta o no en el piso
 	const float k_CeilingRadius = .2f; // Radio que checkea si el zorrito se puede parar o no
 	private Rigidbody2D m_Rigidbody2D;
 	private bool m_FacingRight = true;  // Siempre empieza mirando a la derecha
 	private Vector3 m_Velocity = Vector3.zero;
+	private float collectables = 0f; // Contador de recolectables
 
 	[Header("Events")]
 	[Space]
@@ -32,7 +37,7 @@ public class CharacterController2D : MonoBehaviour
 	public class BoolEvent : UnityEvent<bool> { }
 
 	public BoolEvent OnCrouchEvent;
-	private bool m_wasCrouching = false;
+	private bool m_wasCrouching = false; // Flag de si se agacha o no
 
     private void Start()
     {
@@ -67,7 +72,26 @@ public class CharacterController2D : MonoBehaviour
 		}
 	}
 
-	public void Move(float move, bool crouch, bool jump)
+    private void OnTriggerEnter2D(Collider2D collision) // Se activa al chocar un collider con otro con un on trigger
+    {
+		if (collision.tag == "Collectable")
+        {
+			Destroy(collision.gameObject);
+			if (m_wasCrouching)
+            {
+				collectables++;
+				collectablesText.text = collectables.ToString();
+			}
+			else
+            {
+				collectables++;
+				collectables -= 0.5f;
+				collectablesText.text = collectables.ToString();
+			}
+		}
+    }
+
+    public void Move(float move, bool crouch, bool jump)
 	{
 		// Si esta agachado checkea si se puede parar
 		if (!crouch)
@@ -140,7 +164,7 @@ public class CharacterController2D : MonoBehaviour
 		transform.localScale = theScale;
 	}
 
-	// Evento de sonido para caminar linkedo a la animacion
+	// Evento de sonido para caminar linkeado a la animacion
 	private void FootStep()
     {
 		footStep.Play();
