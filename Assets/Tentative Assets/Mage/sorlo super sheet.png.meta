@@ -1,0 +1,618 @@
+fileFormatVersion: 2
+guid: aa1e5ade766fd294ab2b63600ebe31f9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7769876932102517924
+    second: sorlo super sheet_0
+  - first:
+      213: 3457892697178909418
+    second: sorlo super sheet_0
+  - first:
+      213: 8988023623436767777
+    second: sorlo super sheet_1
+  - first:
+      213: 3342638157143280235
+    second: sorlo super sheet_2
+  - first:
+      213: -8027284342014157594
+    second: sorlo super sheet_3
+  - first:
+      213: -3054050205995020090
+    second: sorlo super sheet_4
+  - first:
+      213: -1957488811108070366
+    second: sorlo super sheet_5
+  - first:
+      213: 891907037034077520
+    second: sorlo super sheet_6
+  - first:
+      213: 1204895434736094917
+    second: sorlo super sheet_7
+  - first:
+      213: 6818867438551134999
+    second: sorlo super sheet_8
+  - first:
+      213: 135845112560514141
+    second: sorlo super sheet_9
+  - first:
+      213: -3155080599017589394
+    second: sorlo super sheet_10
+  - first:
+      213: -560771985217460692
+    second: sorlo super sheet_11
+  - first:
+      213: 8109415919351498911
+    second: sorlo super sheet_12
+  - first:
+      213: -5602919898501093731
+    second: sorlo super sheet_13
+  - first:
+      213: 7967385057550187088
+    second: sorlo super sheet_14
+  - first:
+      213: 9114839534539269032
+    second: sorlo super sheet_15
+  - first:
+      213: -6658393699944708872
+    second: sorlo super sheet_16
+  - first:
+      213: -4327174545998086507
+    second: sorlo super sheet_17
+  - first:
+      213: -6085467549744447481
+    second: sorlo super sheet_18
+  - first:
+      213: 645988711353993614
+    second: sorlo super sheet_19
+  - first:
+      213: -1703606396229838291
+    second: sorlo super sheet_20
+  - first:
+      213: 1522796400972554192
+    second: sorlo super sheet_21
+  - first:
+      213: 5113794741354060419
+    second: sorlo super sheet_22
+  - first:
+      213: 958596231206866382
+    second: sorlo super sheet_23
+  - first:
+      213: -1128655343717992124
+    second: sorlo super sheet_24
+  - first:
+      213: -5055421417217874017
+    second: sorlo super sheet_25
+  - first:
+      213: -3459301758953062413
+    second: sorlo super sheet_26
+  - first:
+      213: -8550868109448777427
+    second: sorlo super sheet_27
+  - first:
+      213: -888420216627947303
+    second: sorlo super sheet_28
+  - first:
+      213: 4959958628354541266
+    second: sorlo super sheet_29
+  - first:
+      213: -6209745657118951151
+    second: sorlo super sheet_30
+  - first:
+      213: 3853643131517635653
+    second: sorlo super sheet_31
+  - first:
+      213: -7731490383693570906
+    second: sorlo super sheet_32
+  - first:
+      213: 6657017377666865989
+    second: sorlo super sheet_33
+  - first:
+      213: -8502444769746672619
+    second: sorlo super sheet_34
+  - first:
+      213: 7365071563930501365
+    second: sorlo super sheet_35
+  - first:
+      213: 2753072672454339935
+    second: sorlo super sheet_36
+  - first:
+      213: 8547147100316139971
+    second: sorlo super sheet_37
+  - first:
+      213: 6976392132102326146
+    second: sorlo super sheet_38
+  - first:
+      213: 3850484669594014303
+    second: sorlo super sheet_39
+  - first:
+      213: 7185555461582774041
+    second: sorlo super sheet_40
+  - first:
+      213: 5479230554333019857
+    second: sorlo super sheet_41
+  - first:
+      213: 6563718263014733540
+    second: sorlo super sheet_42
+  - first:
+      213: 4850284989052391807
+    second: sorlo super sheet_43
+  - first:
+      213: -1472612259874093979
+    second: sorlo super sheet_44
+  - first:
+      213: -1797924253568037288
+    second: sorlo super sheet_45
+  - first:
+      213: 1652275359577279378
+    second: sorlo super sheet_46
+  - first:
+      213: 5276312644529389200
+    second: sorlo super sheet_47
+  - first:
+      213: 5005395721408458172
+    second: sorlo super sheet_48
+  - first:
+      213: -720489196134848502
+    second: sorlo super sheet_49
+  - first:
+      213: 1836102760589204194
+    second: sorlo super sheet_50
+  - first:
+      213: 7760391182339264614
+    second: sorlo super sheet_51
+  - first:
+      213: 1073597758955230880
+    second: sorlo super sheet_52
+  - first:
+      213: -4537269671043103955
+    second: sorlo super sheet_53
+  - first:
+      213: -6698988778107348397
+    second: sorlo super sheet_54
+  - first:
+      213: 3235777163452247908
+    second: sorlo super sheet_55
+  - first:
+      213: 3131905505269998597
+    second: sorlo super sheet_56
+  - first:
+      213: 5426335994234290820
+    second: sorlo super sheet_57
+  - first:
+      213: 7521548223708746162
+    second: sorlo super sheet_58
+  - first:
+      213: 1828135390881804793
+    second: sorlo super sheet_59
+  - first:
+      213: 3489705671475516120
+    second: sorlo super sheet_60
+  - first:
+      213: -651338551837915262
+    second: sorlo super sheet_61
+  - first:
+      213: 1672258583284142668
+    second: sorlo super sheet_62
+  - first:
+      213: -3404835106029566551
+    second: sorlo super sheet_63
+  - first:
+      213: 4791926843602741835
+    second: sorlo super sheet_64
+  - first:
+      213: 2218235203950011484
+    second: sorlo super sheet_65
+  - first:
+      213: -1425618294632634284
+    second: sorlo super sheet_66
+  - first:
+      213: 3921128219026333426
+    second: sorlo super sheet_67
+  - first:
+      213: 2961097628000716715
+    second: sorlo super sheet_68
+  - first:
+      213: 3268552590970610436
+    second: sorlo super sheet_69
+  - first:
+      213: 1743791741705081829
+    second: sorlo super sheet_70
+  - first:
+      213: 3270667772636937156
+    second: sorlo super sheet_71
+  - first:
+      213: -790106139583641448
+    second: sorlo super sheet_72
+  - first:
+      213: -710404239350610262
+    second: sorlo super sheet_73
+  - first:
+      213: -2536518956272861935
+    second: sorlo super sheet_74
+  - first:
+      213: 6924817516834387205
+    second: sorlo super sheet_75
+  - first:
+      213: 4356839451915904877
+    second: sorlo super sheet_76
+  - first:
+      213: 6087791096895231285
+    second: sorlo super sheet_77
+  - first:
+      213: -1582994126473039
+    second: sorlo super sheet_78
+  - first:
+      213: 5348501734759764773
+    second: sorlo super sheet_79
+  - first:
+      213: 6046511063806340981
+    second: sorlo super sheet_80
+  - first:
+      213: 1423055313134842522
+    second: sorlo super sheet_81
+  - first:
+      213: 1768012048449195017
+    second: sorlo super sheet_82
+  - first:
+      213: 7722070714229483074
+    second: sorlo super sheet_83
+  - first:
+      213: -4449957360599764356
+    second: sorlo super sheet_84
+  - first:
+      213: 5764004541553318739
+    second: sorlo super sheet_85
+  - first:
+      213: 378763655636776025
+    second: sorlo super sheet_86
+  - first:
+      213: -131112278478696366
+    second: sorlo super sheet_87
+  - first:
+      213: -2350051890986173595
+    second: sorlo super sheet_88
+  - first:
+      213: -5400747864560628035
+    second: sorlo super sheet_89
+  - first:
+      213: -6648825807760633477
+    second: sorlo super sheet_90
+  - first:
+      213: 594515054955165614
+    second: sorlo super sheet_91
+  - first:
+      213: 4796148169993685169
+    second: sorlo super sheet_92
+  - first:
+      213: -8504102028789271985
+    second: sorlo super sheet_93
+  - first:
+      213: -5815309805184592333
+    second: sorlo super sheet_94
+  - first:
+      213: -3321793234132521228
+    second: sorlo super sheet_95
+  - first:
+      213: 7575692962098884299
+    second: sorlo super sheet_96
+  - first:
+      213: -4160850288027508106
+    second: sorlo super sheet_97
+  - first:
+      213: 9174895687356701205
+    second: sorlo super sheet_98
+  - first:
+      213: -1406926841659566522
+    second: sorlo super sheet_99
+  - first:
+      213: 8822447114811526653
+    second: sorlo super sheet_100
+  - first:
+      213: 1361588161419200842
+    second: sorlo super sheet_101
+  - first:
+      213: -7431600716342459919
+    second: sorlo super sheet_102
+  - first:
+      213: 5557497449329141836
+    second: sorlo super sheet_103
+  - first:
+      213: 2143605867222093820
+    second: sorlo super sheet_104
+  - first:
+      213: 7599001212167281139
+    second: sorlo super sheet_105
+  - first:
+      213: 8408650303778912468
+    second: sorlo super sheet_106
+  - first:
+      213: -205411968902390021
+    second: sorlo super sheet_107
+  - first:
+      213: 6988641117208258936
+    second: sorlo super sheet_108
+  - first:
+      213: 1444256465846606383
+    second: sorlo super sheet_109
+  - first:
+      213: -7266088956280848811
+    second: sorlo super sheet_110
+  - first:
+      213: 25978335992572158
+    second: sorlo super sheet_111
+  - first:
+      213: 2904367421703194798
+    second: sorlo super sheet_112
+  - first:
+      213: -5780990283011171283
+    second: sorlo super sheet_113
+  - first:
+      213: -8625241130605385345
+    second: sorlo super sheet_114
+  - first:
+      213: -2536913005053727898
+    second: sorlo super sheet_115
+  - first:
+      213: -2866029331774490200
+    second: sorlo super sheet_116
+  - first:
+      213: -2004756125846230850
+    second: sorlo super sheet_117
+  - first:
+      213: -1516695815672614819
+    second: sorlo super sheet_118
+  - first:
+      213: 1391431992493931444
+    second: sorlo super sheet_119
+  - first:
+      213: -8588353870701485103
+    second: sorlo super sheet_120
+  - first:
+      213: 5834539218585361943
+    second: sorlo super sheet_121
+  - first:
+      213: 8410849968596213749
+    second: sorlo super sheet_122
+  - first:
+      213: -7482901033955735915
+    second: sorlo super sheet_123
+  - first:
+      213: 7602649504876372794
+    second: sorlo super sheet_124
+  - first:
+      213: 6584795917099904508
+    second: sorlo super sheet_125
+  - first:
+      213: 4326546156688454672
+    second: sorlo super sheet_126
+  - first:
+      213: -4861707917371973064
+    second: sorlo super sheet_127
+  - first:
+      213: -3796660382393458355
+    second: sorlo super sheet_128
+  - first:
+      213: 6770892468475203219
+    second: sorlo super sheet_129
+  - first:
+      213: -8666088866474721301
+    second: sorlo super sheet_130
+  - first:
+      213: 6248993569421023319
+    second: sorlo super sheet_131
+  - first:
+      213: 4357613116882064444
+    second: sorlo super sheet_132
+  - first:
+      213: -912434157221033044
+    second: sorlo super sheet_133
+  - first:
+      213: -998298940035280936
+    second: sorlo super sheet_134
+  - first:
+      213: -6565310540684038106
+    second: sorlo super sheet_135
+  - first:
+      213: 8134313963617570815
+    second: sorlo super sheet_136
+  - first:
+      213: -452517581714028720
+    second: sorlo super sheet_137
+  - first:
+      213: -7127322967015212604
+    second: sorlo super sheet_138
+  - first:
+      213: -4866360543043639424
+    second: sorlo super sheet_139
+  - first:
+      213: 5771449917750958034
+    second: sorlo super sheet_140
+  - first:
+      213: 5161306686949128870
+    second: sorlo super sheet_141
+  - first:
+      213: -4203113420730289041
+    second: sorlo super sheet_142
+  - first:
+      213: 3138965571463290171
+    second: sorlo super sheet_143
+  - first:
+      213: -4314457315849880552
+    second: sorlo super sheet_144
+  - first:
+      213: 3098141084090684034
+    second: sorlo super sheet_145
+  - first:
+      213: -9085971350099530978
+    second: sorlo super sheet_146
+  - first:
+      213: -8644857138781911797
+    second: sorlo super sheet_147
+  - first:
+      213: 5012191439921375398
+    second: sorlo super sheet_148
+  - first:
+      213: 8449916691819592250
+    second: sorlo super sheet_149
+  - first:
+      213: -3830887372175431222
+    second: sorlo super sheet_150
+  - first:
+      213: 5853738819453160069
+    second: sorlo super sheet_151
+  - first:
+      213: 5370852099410611542
+    second: sorlo super sheet_152
+  - first:
+      213: 3503171265964274198
+    second: sorlo super sheet_153
+  - first:
+      213: 405325699059096856
+    second: sorlo super sheet_154
+  - first:
+      213: -5788188891861388848
+    second: sorlo super sheet_155
+  - first:
+      213: 8509867062777339146
+    second: sorlo super sheet_156
+  - first:
+      213: -8080337127305529169
+    second: sorlo super sheet_157
+  - first:
+      213: 5733875123468076590
+    second: sorlo super sheet_158
+  - first:
+      213: 7161220185533370253
+    second: sorlo super sheet_159
+  - first:
+      213: 7147144140539084015
+    second: sorlo super sheet_160
+  - first:
+      213: -1565438182822041272
+    second: sorlo super sheet_161
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sorlo super sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1175
+        height: 635
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -587.5, y: 317.5}
+        - {x: -587.5, y: -317.5}
+        - {x: 587.5, y: -317.5}
+        - {x: 587.5, y: 317.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aea24ce5617ecff20800000000000000
+      internalID: 3457892697178909418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

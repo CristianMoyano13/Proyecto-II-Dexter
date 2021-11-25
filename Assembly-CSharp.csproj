@@ -64,10 +64,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Free Pixel Art Forest\Demo\MoveBackground.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\CharacterController2D.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\SoundLifeTime.cs" />
+    <None Include="Assets\Free Pixel Art Forest\Contact.txt" />
+    <None Include="Assets\Dragon Warrior Files\Read Me.txt" />
+    <None Include="Assets\Free Pixel Art Forest\Lisense.txt" />
+    <None Include="Assets\Free Pixel Art Forest\readme.txt" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
