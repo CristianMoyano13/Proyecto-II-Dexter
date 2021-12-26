@@ -16,6 +16,7 @@ public class CharacterController2D : MonoBehaviour
 	[SerializeField] private GameObject jumpSound;
 	[SerializeField] private AudioSource footStep;
 	[SerializeField] private AudioSource crouch;
+	[SerializeField] private AudioSource hurt;
 
 	[SerializeField] private Text collectablesText;
 
@@ -24,6 +25,8 @@ public class CharacterController2D : MonoBehaviour
 	private bool m_Grounded;            // Si esta o no en el piso
 	const float k_CeilingRadius = .2f; // Radio que checkea si el zorrito se puede parar o no
 	private Rigidbody2D m_Rigidbody2D;
+	private PlayerMovement playerMovement;
+	private Animator animator;
 	private bool m_FacingRight = true;  // Siempre empieza mirando a la derecha
 	private Vector3 m_Velocity = Vector3.zero;
 	private float collectables = 0f; // Contador de recolectables
@@ -46,6 +49,7 @@ public class CharacterController2D : MonoBehaviour
     private void Awake()
 	{
 		m_Rigidbody2D = GetComponent<Rigidbody2D>();
+		animator = GetComponent<Animator>();
 
 		if (OnLandEvent == null)
 			OnLandEvent = new UnityEvent();
@@ -74,9 +78,11 @@ public class CharacterController2D : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision) // Se activa al chocar un collider con otro con un on trigger
     {
+		Animator aniCollectable = collision.GetComponent<Animator>();
 		if (collision.tag == "Collectable")
         {
-			Destroy(collision.gameObject);
+			aniCollectable.SetBool("IsCollected", true);
+			//Destroy(collision.gameObject);
 			if (m_wasCrouching)
             {
 				collectables++;
@@ -88,6 +94,40 @@ public class CharacterController2D : MonoBehaviour
 				collectables -= 0.5f;
 				collectablesText.text = collectables.ToString();
 			}
+		}
+        else
+        {
+			aniCollectable.SetBool("IsCollected", false);
+		}
+    }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if(other.gameObject.tag == "Enemy")
+        {
+			if(m_Rigidbody2D.velocity.y < -1)
+            {
+				Destroy(other.gameObject);
+				m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce+100));
+            }
+            else
+            {	
+				if(other.gameObject.transform.position.x < transform.position.x)
+                {
+					m_Rigidbody2D.AddForce(new Vector2(600f, 0f)); //si esta a mi derecha aplico una fuerza hacia mi izquierda
+					animator.SetBool("IsHurt", true);
+				}
+                else
+                {
+					m_Rigidbody2D.AddForce(new Vector2(-600f, 0f)); //si esta a mi izquierda aplico una fuerza hacia mi derecha
+					animator.SetBool("IsHurt", true);
+				}
+            }
+			
+        }
+        else
+        {
+			animator.SetBool("IsHurt", false);
 		}
     }
 
@@ -174,4 +214,10 @@ public class CharacterController2D : MonoBehaviour
 	{
 		crouch.Play();
 	}
+
+	// Evento de sonido cuando el player es herido
+	public void Hurt()
+    {
+		hurt.Play();
+    }
 }
