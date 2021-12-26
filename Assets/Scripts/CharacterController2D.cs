@@ -82,7 +82,7 @@ public class CharacterController2D : MonoBehaviour
 		if (collision.tag == "Collectable")
         {
 			aniCollectable.SetBool("IsCollected", true);
-			//Destroy(collision.gameObject);
+			Destroy(collision.gameObject,0.26f);
 			if (m_wasCrouching)
             {
 				collectables++;
